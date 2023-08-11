@@ -1,0 +1,62 @@
+.side-menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 60px;
+    list-style-type: none;
+    background: #fefffe;
+    overflow: hidden;
+    transition: width 0.6s;
+}
+
+.side-menu:hover {
+    width: 300px;
+}
+
+/* ...Existing styles... */
+
+.side-menu li {
+    width: 60px;
+  }
+  
+  .side-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    height: 60px;
+    position: relative;
+  }
+  
+  /* Icons */
+  .side-menu li a svg {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  .side-menu li a .menu-text {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    opacity: 1; /* Set default opacity to 1 */
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Show menu text on hover */
+  .side-menu li a:hover .menu-text {
+    opacity: 1;
+    color: black;
+    background-color: aqua;
+  }
+  
+  /* Additional styles to ensure proper display on hover */
+  .side-menu:hover li a .menu-text {
+    opacity: 1;
+  }
